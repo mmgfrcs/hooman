@@ -1711,6 +1711,13 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+tough-cookie-file-store@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tough-cookie-file-store/-/tough-cookie-file-store-2.0.2.tgz#9b22ee3ccb5dbd92cc23ac77ca624762df33dc4e"
+  integrity sha512-i8Vo9RKe9PpHL4S8EZXeg2ZmZ+khyK2HSgoyNn0RwYEgttOjDsTMt8iD1UTgQ7shKxi7IfThHSXWB7vKucEYgQ==
+  dependencies:
+    tough-cookie "^4.0.0"
+
 tough-cookie@^2.3.3, tough-cookie@~2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"

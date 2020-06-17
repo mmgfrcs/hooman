@@ -1,13 +1,14 @@
 'use strict';
-const got = require('got');
+const got = require('got').default;
 const solveChallenge = require('./lib/core');
 const solveCaptcha = require('./lib/captcha');
 const delay = require('./lib/delay');
 const log = require('./lib/logging');
 const { CookieJar } = require('tough-cookie');
 const UserAgent = require('user-agents');
+const CookieFileStore = require('tough-cookie-file-store').FileCookieStore;
 
-const cookieJar = new CookieJar(); // Automatically parse and store cookies
+const cookieJar = new CookieJar(new CookieFileStore('./cookie.json')); // Automatically parse and store cookies
 const challengeInProgress = {};
 
 // Got instance to handle cloudflare bypass
